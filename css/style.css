@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #1b4c6e;
+}
+
+/* ---SKIP TO MAIN CONTENT (USING TAB TO SEE IT)--- */
+
+#skip {
+  opacity: 0;
+  text-decoration: none;
+
+}
+
+#skip:focus {
+  opacity: 1;
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+  border: solid 1px;
+  background-color: lightgray;
+
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* ---USING FLEX--- */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #1b4c6e;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---USING HOVER--- */
+
+nav a:hover {
+  color: crimson;
+  transform: scale(1.2);
+}
+
+/* ---USING GRID--- */
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 2rem;
+}
+
+.column {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #1b4c6e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.column img {
+  width: 40%;
+}
+
+.column h2 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 10px 0 10px 0;
+  color: lightblue;
+}
+
+.column h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightgray;
+  margin: 20px 0 20px 0;
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+footer p {
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #1b4c6e;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ---USING PSEUDO-SELECTOR--- */
+
+main h2:first-child {
+  color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+
+}
+
+.container-author {
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-around;
+
+}
+
+.container-book {
+  background-color: #1b4c6e;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container-book img {
+  width: 45%;
+}
+
+.container-book h3 {
+  color: lightblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.container-book p {
+  color: lightgray;
+  font-size: 1.2rem;
+  margin: 1rem;
+
+}
+
+.container-book a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+}
+
+.container-book a:hover {
+  color: aquamarine;
+
+}
