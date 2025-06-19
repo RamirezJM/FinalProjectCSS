@@ -95,24 +95,27 @@ nav a:hover {
   display: grid;
   grid-template-columns: 1fr;
   padding: 1em;
+  justify-items: center;
 }
 .book{
  display: flex;
  flex-direction: column;
  align-items: center;
+ width: 100%;
 }
 
-/* .column figure {
+.column figure {
   width: 60%;
   text-align: center;
   margin-block: 1em;
  
  
-} */
+}
 figure>img {
-  width: 60%;
+  width: 100%;
   aspect-ratio: 1 / 1.5;
   object-fit: cover;
+ 
 }
 .column h2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -141,16 +144,6 @@ footer p {
   padding: 15px;
 }
 
-/* ---USING PSEUDO-SELECTOR--- */
-
-/* main h2:first-child {
-  color: lightgray;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  text-align: center;
-  margin: 2rem 0 2rem 0;
-
-} */
 
 .container-author {
 
@@ -197,4 +190,21 @@ footer p {
 .container-book a:hover {
   color: aquamarine;
 
+}
+
+@media (min-width: 700px){
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .column{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .column h2{
+    grid-column: 1 / -1;
+    
+  }
 }
